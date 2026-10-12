@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.turbo/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+.kiro/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+
+# Terraform
+infra/terraform/.terraform/
+infra/terraform/*.tfstate
+infra/terraform/*.tfstate.backup
+infra/terraform/.terraform.lock.hcl
+
+# Logs
+*.log
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+*.p12
+
+# pnpm debug
+pnpm-debug.log
+
+# Test artifacts
+test-results/
+playwright-report/
+
+# OMC plugin state
+.omc/

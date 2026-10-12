@@ -1,0 +1,71 @@
+{
+  "name": "internal-developer-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Internal Developer Platform - Enterprise platform engineering monorepo",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,yaml,yml}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,yaml,yml}\"",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:unit": "turbo run test:unit",
+    "test:integration": "turbo run test:integration",
+    "clean": "turbo run clean",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "conventional-changelog-conventionalcommits": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.2.0",
+    "playwright": "^1.60.0",
+    "prettier": "^3.2.0",
+    "semantic-release": "^23.0.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasonTM17/Internal_Developer_Platform_DevOps.git"
+  },
+  "homepage": "https://github.com/JasonTM17/Internal_Developer_Platform_DevOps#readme",
+  "bugs": {
+    "url": "https://github.com/JasonTM17/Internal_Developer_Platform_DevOps/issues"
+  },
+  "author": "JasonTM17",
+  "license": "MIT",
+  "keywords": [
+    "internal-developer-platform",
+    "devops",
+    "platform-engineering",
+    "kubernetes",
+    "terraform",
+    "gitops",
+    "argocd"
+  ],
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yaml,yml}": [
+      "prettier --write"
+    ]
+  }
+}
